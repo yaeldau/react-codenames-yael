@@ -10,7 +10,7 @@ export default function Codenames(props) {
   const [blueCounter, setBlueCounter] = useState(blueInitCounter);
   const [isBlackClicked, setIsBlackClicked] = useState(false);
   const [spymaster, setSpymaster] = useState(false);
-  const gameWords = getRandomWords()
+  const [gameWords, setGameWords] = useState(getRandomWords())
 
   function isGameEnded() {
     let res = false;
